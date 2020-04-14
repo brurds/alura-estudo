@@ -1,11 +1,13 @@
 <template>
   <div class="corpo">
-
-    <meu-menu :rotas="routes"/>
-
-    <transition name="pagina">
-      <router-view></router-view>
-    </transition>
+    <div>
+      <meu-menu :rotas="routes"/>
+    </div>
+    <div>
+      <transition name="pagina">
+        <router-view></router-view>
+      </transition>
+    </div>
   </div>
 </template>
 
@@ -33,8 +35,7 @@ export default {
 <style>
   .corpo {
     font-family: Helvetica, sans-serif;
-    width: 96%;
-    margin: 0 auto;
+    width: 100%;
   }
 
  .pagina-enter, .pagina-leave-active {
